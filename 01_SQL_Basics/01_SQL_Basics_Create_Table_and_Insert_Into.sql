@@ -44,7 +44,10 @@ INSERT INTO EmployeeDemographics VALUES
 (1006, 'Michael', 'Scott', 35, 'Male'),
 (1007, 'Meredith', 'Palmer', 32, 'Female'),
 (1008, 'Stanley', 'Hudson', 38, 'Male'),
-(1009, 'Kevin', 'Malone', 31, 'Male')
+(1009, 'Kevin', 'Malone', 31, 'Male'),
+(1011, 'Ryan', 'Howard', 26, 'Male'),
+(NULL, 'Holly', 'Flax', NULL, NULL),
+(1013, 'Darryl', 'Philbin', NULL, 'Male')
 
 Table 2 Insert:
 INSERT INTO EmployeeSalary VALUES
@@ -56,4 +59,6 @@ INSERT INTO EmployeeSalary VALUES
 (1006, 'Regional Manager', 65000),
 (1007, 'Supplier Relations', 41000),
 (1008, 'Salesman', 48000),
-(1009, 'Accountant', 42000)
+(1009, 'Accountant', 42000),
+(1010, NULL, 47000),
+(NULL, 'Salesman', 43000)
