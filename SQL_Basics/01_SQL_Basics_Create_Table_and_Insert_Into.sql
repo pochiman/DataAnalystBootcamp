@@ -1,3 +1,21 @@
+/*
+SELECT TOP (1000) [EmployeeID]
+      ,[FirstName]
+      ,[LastName]
+      ,[Age]
+      ,[Gender]
+  FROM [SQLTutorial].[dbo].[EmployeeDemographics]
+
+
+
+SELECT TOP (1000) [EmployeeID]
+      ,[JobTitle]
+      ,[Salary]
+  FROM [SQLTutorial].[dbo].[EmployeeSalary]
+*/
+
+
+
 Table 1 Query:
 CREATE TABLE EmployeeDemographics 
 (EmployeeID int, 
