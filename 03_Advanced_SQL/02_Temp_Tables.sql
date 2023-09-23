@@ -6,9 +6,9 @@ Temp Tables
 
 Temp Table 1 Query:
 CREATE TABLE #temp_Employee (
-EmployeeID int,
-JobTitle varchar(100),
-Salary int
+    EmployeeID int,
+    JobTitle varchar(100),
+    Salary int
 )
 
 
@@ -18,9 +18,8 @@ FROM #temp_Employee
 
 
 
-INSERT INTO #temp_Employee VALUES (
-'1001', 'HR', '45000'
-)
+INSERT INTO #temp_Employee 
+VALUES ('1001', 'HR', '45000')
 
 
 
@@ -32,10 +31,10 @@ FROM SQLTutorial..EmployeeSalary
 
 Temp Table 2 Query:
 CREATE TABLE #temp_Employee2 (
-JobTitle varchar(50),
-EmployeesPerJob int,
-AvgAge int,
-AvgSalary int
+    JobTitle varchar(50),
+    EmployeesPerJob int,
+    AvgAge int,
+    AvgSalary int
 )
 
 
@@ -56,10 +55,10 @@ FROM #temp_Employee2
 
 DROP TABLE IF EXISTS #temp_Employee2
 CREATE TABLE #temp_Employee2 (
-JobTitle varchar(50),
-EmployeesPerJob int,
-AvgAge int,
-AvgSalary int
+    JobTitle varchar(50),
+    EmployeesPerJob int,
+    AvgAge int,
+    AvgSalary int
 )
 
 

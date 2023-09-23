@@ -7,15 +7,16 @@ String Functions - TRIM, LTRIM, RTRIM, Replace, SUBSTRING, UPPER, LOWER
 
 
 CREATE TABLE EmployeeErrors (
-EmployeeID varchar(50),
-FirstName varchar(50),
-LastName varchar(50)
+    EmployeeID varchar(50),
+    FirstName varchar(50),
+    LastName varchar(50)
 )
 
-INSERT INTO EmployeeErrors VALUES 
-('1001  ', 'Jimbo', 'Halbert'),
-('  1002', 'Pamela', 'Beasely'),
-('1005', 'TOby', 'Flenderson - Fired')
+INSERT INTO EmployeeErrors 
+VALUES 
+    ('1001  ', 'Jimbo', 'Halbert'),
+    ('  1002', 'Pamela', 'Beasely'),
+    ('1005', 'TOby', 'Flenderson - Fired')
 
 SELECT *
 FROM EmployeeErrors
@@ -64,7 +65,11 @@ JOIN EmployeeDemographics Demo
 
 
 
-SELECT Err.FirstName, SUBSTRING(Err.FirstName,1,3), Demo.FirstName, SUBSTRING(Demo.FirstName,1,3)
+SELECT 
+    Err.FirstName, 
+    SUBSTRING(Err.FirstName,1,3), 
+    Demo.FirstName, 
+    SUBSTRING(Demo.FirstName,1,3)
 FROM EmployeeErrors Err
 JOIN EmployeeDemographics Demo
     ON SUBSTRING(Err.FirstName,1,3) = SUBSTRING(Demo.FirstName,1,3)
@@ -83,7 +88,11 @@ example you have an EmployeeID.
 
 
 
-SELECT SUBSTRING(Err.FirstName,1,3), SUBSTRING(Demo.FirstName,1,3), SUBSTRING(Err.LastName,1,3), SUBSTRING(Demo.LastName,1,3)
+SELECT 
+    SUBSTRING(Err.FirstName,1,3), 
+    SUBSTRING(Demo.FirstName,1,3), 
+    SUBSTRING(Err.LastName,1,3), 
+    SUBSTRING(Demo.LastName,1,3)
 FROM EmployeeErrors Err
 JOIN EmployeeDemographics Demo
 	ON SUBSTRING(Err.FirstName,1,3) = SUBSTRING(Demo.FirstName,1,3)

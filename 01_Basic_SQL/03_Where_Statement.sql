@@ -85,13 +85,13 @@ WHERE LastName LIKE 'S%c%ott%'
 
 SELECT *
 FROM EmployeeDemographics
-WHERE FirstName is NULL
+WHERE FirstName IS NULL
 
 
 
 SELECT *
 FROM EmployeeDemographics
-WHERE FirstName is NOT NULL
+WHERE FirstName IS NOT NULL
 
 
 

@@ -18,10 +18,10 @@ EXEC TEST
 CREATE PROCEDURE temp_Employee
 AS
 CREATE TABLE #temp_Employee (
-JobTitle varchar(100),
-EmployeesPerJob int,
-AvgAge int,
-AvgSalary int
+    JobTitle varchar(100),
+    EmployeesPerJob int,
+    AvgAge int,
+    AvgSalary int
 )
 
 INSERT INTO #temp_Employee
@@ -67,10 +67,10 @@ ALTER PROCEDURE [dbo].[temp_Employee]
 @JobTitle nvarchar(100)
 AS
 CREATE TABLE #temp_Employee (
-JobTitle varchar(100),
-EmployeesPerJob int,
-AvgAge int,
-AvgSalary int
+    JobTitle varchar(100),
+    EmployeesPerJob int,
+    AvgAge int,
+    AvgSalary int
 )
 
 INSERT INTO #temp_Employee

@@ -10,7 +10,10 @@ FROM EmployeeSalary
 
 
 -- Subquery in SELECT
-SELECT EmployeeID, Salary, (SELECT AVG(Salary) FROM EmployeeSalary) AS AllAvgSalary
+SELECT EmployeeID, Salary, (
+    SELECT AVG(Salary) 
+    FROM EmployeeSalary
+    ) AS AllAvgSalary
 FROM EmployeeSalary
 
 
@@ -31,7 +34,9 @@ ORDER BY 1,2
 
 -- Subquery in FROM
 SELECT a.EmployeeID, AllAvgSalary
-FROM (SELECT EmployeeID, Salary, AVG(Salary) OVER () AS AllAvgSalary
+FROM (
+    SELECT EmployeeID, Salary, AVG(Salary) 
+    OVER () AS AllAvgSalary
     FROM EmployeeSalary) a
 
 

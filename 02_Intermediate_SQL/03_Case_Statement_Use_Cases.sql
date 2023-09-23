@@ -6,7 +6,7 @@ Case Statement
 
 SELECT FirstName, LastName, Age
 FROM SQLTutorial.dbo.EmployeeDemographics
-WHERE Age is NOT NULL
+WHERE Age IS NOT NULL
 ORDER BY Age
 
 
@@ -17,7 +17,7 @@ CASE
     ELSE 'Young'
 END
 FROM SQLTutorial.dbo.EmployeeDemographics
-WHERE Age is NOT NULL
+WHERE Age IS NOT NULL
 ORDER BY Age
 
 
@@ -29,7 +29,7 @@ CASE
     ELSE 'Baby'
 END
 FROM SQLTutorial.dbo.EmployeeDemographics
-WHERE Age is NOT NULL
+WHERE Age IS NOT NULL
 ORDER BY Age
 
 
@@ -41,7 +41,7 @@ CASE
     ELSE 'Baby'
 END
 FROM SQLTutorial.dbo.EmployeeDemographics
-WHERE Age is NOT NULL
+WHERE Age IS NOT NULL
 ORDER BY Age
 
 

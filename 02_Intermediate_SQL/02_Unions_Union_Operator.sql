@@ -12,20 +12,21 @@ SELECT TOP (1000) [EmployeeID]
 
 
 Table 3 Query:
-CREATE TABLE WarehouseEmployeeDemographics 
-(EmployeeID int, 
-FirstName varchar(50), 
-LastName varchar(50), 
-Age int, 
-Gender varchar(50)
+CREATE TABLE WarehouseEmployeeDemographics (
+    EmployeeID int, 
+    FirstName varchar(50), 
+    LastName varchar(50), 
+    Age int, 
+    Gender varchar(50)
 )
 
 Table 3 Insert:
-INSERT INTO WarehouseEmployeeDemographics VALUES
-(1013, 'Darryl', 'Philbin', NULL, 'Male'),
-(1050, 'Roy', 'Anderson', 31, 'Male'),
-(1051, 'Hidetoshi', 'Hasagawa', 40, 'Male'),
-(1052, 'Val', 'Johnson', 31, 'Female')
+INSERT INTO WarehouseEmployeeDemographics 
+VALUES
+    (1013, 'Darryl', 'Philbin', NULL, 'Male'),
+    (1050, 'Roy', 'Anderson', 31, 'Male'),
+    (1051, 'Hidetoshi', 'Hasagawa', 40, 'Male'),
+    (1052, 'Val', 'Johnson', 31, 'Female')
 
 
 
@@ -40,8 +41,7 @@ FROM SQLTutorial.dbo.WarehouseEmployeeDemographics
 SELECT *
 FROM SQLTutorial.dbo.EmployeeDemographics
 FULL OUTER JOIN SQLTutorial.dbo.WarehouseEmployeeDemographics
-    ON EmployeeDemographics.EmployeeID = 
-      WarehouseEmployeeDemographics.EmployeeID
+    ON EmployeeDemographics.EmployeeID = WarehouseEmployeeDemographics.EmployeeID
     
 
 
